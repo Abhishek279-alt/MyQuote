@@ -1,0 +1,45 @@
+body {
+  background-color: #fef9f8;
+}
+
+.container {
+  margin-top: 10vh;
+}
+
+.myDisplay {
+  border: 2px solid red;
+  width: 45%;
+  height: 50vh;
+  margin: 0 auto;
+  background-size: cover;
+  display: none;
+}
+
+.quote-area {
+  width: 50%;
+  margin: 3vh auto;
+}
+
+.d-flex div a img {
+  max-height: 200px;
+  max-width: 210px;
+}
+
+.footer {
+  background-color: #e7e0d6;
+  text-align: center;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1145px) {
+  #signup {
+    position: absolute;
+    left: 85vw;
+  }
+
+  #login {
+    position: absolute;
+    left: 90vw;
+  }
+}

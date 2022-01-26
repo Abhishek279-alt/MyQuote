@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./css/gallery.css">
+
+  <!--Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
+  <!-- Flickity-->
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./favicon_io/favicon-32x32.png" alt="MyQuote"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="signup">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id='login'>Log in</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Body-->
+  <section id="mySection">
+    <div class="myDisplay mb-sm-3" id="myDisplay">
+      <p id="quoteText"></p>
+      <p id="authorText"></p>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-2 offset-5 border-bottom border-dark"></div>
+    </div>
+
+    <div id="imgSize" class="mt-lg-5 mt-md-5 mt-sm-5">
+      <h6 class="d-inline">Image size:</h6>
+      <div class="d-inline">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="imgNormal" checked>
+        <label class="form-check-label" for="imgNormal">
+          Normal
+        </label>
+
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="imgLarg">
+        <label class="form-check-label" for="imgLarg">
+          Large
+        </label>
+      </div>
+    </div>
+
+    <div id="edit-quote" class="my-lg-2 my-md-2 my-sm-2">
+
+      <h6 class="d-inline">Options:</h6>
+      <div class="d-inline">
+
+        <input class="form-check-input" type="checkbox" value="" id="chkBold">
+        <label class="form-check-label" for="chkBold">
+          Bold
+        </label>
+
+        <input class="form-check-input" type="checkbox" value="" id="chkItalic">
+        <label class="form-check-label" for="chkItalic">
+          Italic
+        </label>
+
+        <input class="form-check-input" type="checkbox" value="" id="chkUnderline">
+        <label class="form-check-label" for="chkUnderline">
+          Underline
+        </label>
+
+        <input class="form-check-input" type="checkbox" value="" id="chkShadow">
+        <label class="form-check-label" for="chkShadow">
+          Shadow
+        </label>
+
+      </div>
+
+      <div>
+        <a class="btn btn-primary download mt-lg-3 mt-md-2 mt-sm-2" href="#" onclick="saveQuote()">Download</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="row my-5">
+    <div class="col-2 offset-5 border-bottom border-dark"></div>
+  </div>
+
+
+  <section id="myGallery">
+
+    <div class="main-carousel" data-flickity='{"groupCells": "true", "wrapAround": "true", "lazyLoad": "1"}'>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-1">
+          <img src="./images/img-1.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-2">
+          <img src="./images/img-2.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-3">
+          <img src="./images/img-3.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-4">
+          <img src="./images/img-4.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-5">
+          <img src="./images/img-5.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-6">
+          <img src="./images/img-6.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-7">
+          <img src="./images/img-7.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-8">
+          <img src="./images/img-8.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-9">
+          <img src="./images/img-9.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-10">
+          <img src="./images/img-10.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-11">
+          <img src="./images/img-11.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-13">
+          <img src="./images/img-13.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-14">
+          <img src="./images/img-14.jpg" alt="">
+        </a></div>
+      <div class="carousel-cell mx-lg-2"> <a href="#" id="img-15">
+          <img src="./images/img-15.jpg" alt="">
+        </a></div>
+      <!--Solid Colors-->
+      <div class="carousel-cell mx-lg-2"><a href="#" class="bg-secondary solid" id="img-16"></a></div>
+      <div class="carousel-cell mx-lg-2"><a href="#" class="bg-success solid" id="img-17"></a></div>
+      <div class="carousel-cell mx-lg-2"><a href="#" class="bg-danger solid" id="img-18"></a></div>
+      <div class="carousel-cell mx-lg-2"><a href="#" class="bg-warning solid" id="img-19"></a></div>
+      <div class="carousel-cell mx-lg-2"><a href="#" class="bg-info solid" id="img-20"></a></div>
+      <div class="carousel-cell mx-lg-2"><a href="#" class="bg-light solid" id="img-21"></a></div>
+      <div class="carousel-cell mx-lg-2"><a href="#" class="bg-dark solid" id="img-22"></a></div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="footer py-3">
+    Copyright&copy: Abhishek Singh Rajput 2022
+  </footer>
+
+  <!--Javascripts-->
+  <script src="./js/html2canvas.js"></script>
+  <script src="./js/gallery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+
+</html>
