@@ -77,7 +77,7 @@ document.getElementById("chkShadow").onclick = function () {
 
 document.getElementById("img-1").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
-  document.querySelector(".myDisplay").style.backgroundImage =
+  document.querySelector(".myDisplay").style.background =
     "url('../images/img-1.jpg')";
   document.querySelector(".myDisplay").style.color = "#CFF311";
   document.querySelector(".myDisplay").style.fontFamily =
