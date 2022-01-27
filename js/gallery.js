@@ -77,8 +77,8 @@ document.getElementById("chkShadow").onclick = function () {
 
 document.getElementById("img-1").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
-  document.querySelector(".myDisplay").style.background =
-    "url('../images/img-1.jpg')";
+  document.querySelector(".myDisplay").style.backgroundImage =
+    "url('./images/img-1.jpg')";
   document.querySelector(".myDisplay").style.color = "#CFF311";
   document.querySelector(".myDisplay").style.fontFamily =
     "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
@@ -98,7 +98,7 @@ document.getElementById("img-1").onclick = function () {
 document.getElementById("img-2").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-2.jpg')";
+    "url('./images/img-2.jpg')";
   document.querySelector(".myDisplay").style.color = "#FFFFFF";
   document.querySelector(".myDisplay").style.fontFamily = "Gotu";
   document.getElementById("chkShadow").onclick = function () {
@@ -117,7 +117,7 @@ document.getElementById("img-2").onclick = function () {
 document.getElementById("img-3").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-3.jpg')";
+    "url('./images/img-3.jpg')";
   document.querySelector(".myDisplay").style.color = "#3B170B";
   document.querySelector(".myDisplay").style.fontFamily = "amita";
   document.getElementById("chkShadow").onclick = function () {
@@ -134,7 +134,7 @@ document.getElementById("img-3").onclick = function () {
 document.getElementById("img-4").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-4.jpg')";
+    "url('./images/img-4.jpg')";
   document.querySelector(".myDisplay").style.color = "#FAFAFA";
   document.querySelector(".myDisplay").style.fontFamily = "Courier Std";
   document.getElementById("chkShadow").onclick = function () {
@@ -153,7 +153,7 @@ document.getElementById("img-4").onclick = function () {
 document.getElementById("img-5").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-5.jpg')";
+    "url('./images/img-5.jpg')";
   document.querySelector(".myDisplay").style.color = "#FAFAFA";
   document.querySelector(".myDisplay").style.fontFamily = "Adobe Hebrew";
   document.getElementById("chkShadow").onclick = function () {
@@ -172,7 +172,7 @@ document.getElementById("img-5").onclick = function () {
 document.getElementById("img-6").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-6.jpg')";
+    "url('./images/img-6.jpg')";
   document.querySelector(".myDisplay").style.color = "#3B240B";
   document.querySelector(".myDisplay").style.fontFamily =
     "'Special Elite', cursive";
@@ -192,7 +192,7 @@ document.getElementById("img-6").onclick = function () {
 document.getElementById("img-7").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-7.jpg')";
+    "url('./images/img-7.jpg')";
   document.querySelector(".myDisplay").style.color = "#3A2F0B";
   document.querySelector(".myDisplay").style.fontFamily = "'Aladin', cursive";
   document.getElementById("chkShadow").onclick = function () {
@@ -211,7 +211,7 @@ document.getElementById("img-7").onclick = function () {
 document.getElementById("img-8").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-8.jpg')";
+    "url('./images/img-8.jpg')";
   document.querySelector(".myDisplay").style.color = "#FAFAFA"; //  #F7FE2E
   document.querySelector(".myDisplay").style.fontFamily = "Cicle Semi";
   document.getElementById("chkShadow").onclick = function () {
@@ -230,7 +230,7 @@ document.getElementById("img-8").onclick = function () {
 document.getElementById("img-9").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-9.jpg')";
+    "url('./images/img-9.jpg')";
   document.querySelector(".myDisplay").style.color = "black";
   document.querySelector(".myDisplay").style.fontFamily = "CityBlueprint";
   document.getElementById("chkShadow").onclick = function () {
@@ -249,7 +249,7 @@ document.getElementById("img-9").onclick = function () {
 document.getElementById("img-10").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-10.jpg')";
+    "url('./images/img-10.jpg')";
   document.querySelector(".myDisplay").style.color = "#F2F5A9";
   document.querySelector(".myDisplay").style.fontFamily = "Bauhaus";
   document.getElementById("chkShadow").onclick = function () {
@@ -268,7 +268,7 @@ document.getElementById("img-10").onclick = function () {
 document.getElementById("img-11").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-11.jpg')";
+    "url('./images/img-11.jpg')";
   document.querySelector(".myDisplay").style.color = "#212523";
   document.querySelector(".myDisplay").style.fontFamily = "Adobe Devanagari";
   document.getElementById("chkShadow").onclick = function () {
@@ -289,7 +289,7 @@ document.getElementById("img-11").onclick = function () {
 document.getElementById("img-13").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-13.jpg')";
+    "url('./images/img-13.jpg')";
   document.querySelector(".myDisplay").style.color = "white";
   document.querySelector(".myDisplay").style.fontFamily = "Adobe Devanagari";
   document.getElementById("chkShadow").onclick = function () {
@@ -308,7 +308,7 @@ document.getElementById("img-13").onclick = function () {
 document.getElementById("img-14").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-14.jpg')";
+    "url('./images/img-14.jpg')";
   document.querySelector(".myDisplay").style.color = "#D0FA58";
   document.querySelector(".myDisplay").style.fontFamily = "Comic Sans MS";
   document.getElementById("chkShadow").onclick = function () {
@@ -327,7 +327,7 @@ document.getElementById("img-14").onclick = function () {
 document.getElementById("img-15").onclick = function () {
   document.querySelector(".myDisplay").style.borderColor = "transparent";
   document.querySelector(".myDisplay").style.backgroundImage =
-    "url('../images/img-15.jpg')";
+    "url('./images/img-15.jpg')";
   document.querySelector(".myDisplay").style.color = "white";
   document.querySelector(".myDisplay").style.fontFamily = "Elsie Swash Caps";
   document.getElementById("chkShadow").onclick = function () {
